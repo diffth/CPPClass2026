@@ -47,7 +47,16 @@
 //      for(초기식; 조건식, 증감식;){ true 실행... }
 //      break; 반복문 종료/탈출
 //      continue; 반복문 점프/이동
-
+//
+//---------------------------------------------------------------------------
+//4.함수
+//   함수(function): 특정 작업을 수행하기 위해 톡립적으로 설계된 프로그램 코드 집합
+//   재사용/반복 사용
+//   함수 선언, 정의, 호출
+//   
+//   main() 함수: 프로그램이 실행될 때 가장 먼저 호출되는 함수
+//   입출력 함수: scanf()/printf(), cin/cout, endl...
+//   
 
 
 #include <iostream>
@@ -57,20 +66,33 @@
    여러줄 주석처리 ctrl+shift+/
 */
 
+// Function 함수정의
+int Sum(int a, int b)
+{
+    int temp = a + b;
+    return temp;
+}
+
+
 int main()
 {
     //std::cout << "Hello World!\n";
     //int Length; //변수선언
     //Length = 5; //변수 초기화
     //변수선언, 초기화
-    int Length = 5;
+    //int Length = 5;
 
     //한줄복사 ctrl+ d
     //한줄이동 alt +↑/↓
-    std::cout << Length << std::endl;
-    Length = 9999;
-    std::cout << Length << std::endl;
+    //std::cout << Length << std::endl;
+    //Length = 9999;
+    //std::cout << Length << std::endl;
 
+    int c;
+    int a = 3;
+    int b = 4;
+    c = Sum(a, b);
+    std::cout << c;
 }
 
 // 프로그램 실행: <Ctrl+F5> 또는 [디버그] > [디버깅하지 않고 시작] 메뉴
