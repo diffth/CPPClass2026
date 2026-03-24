@@ -26,6 +26,22 @@
 //      namespace 이릉공간 namespace::classroom
 //      using 지시어 선언(using namespace std;)
 //
+//---------------------------------------------------------------------------
+//3.제어문
+//   조건문
+//      if(조건식) { true 실행... }
+//      if(조건식) { true 실행... } else { false 실행...}
+//      if(조건식) { true 실행... } else if(조건식) { true 실행... } else { 실행... }
+//      switch(조건값)
+//      {
+//          case 값1: 실행... break;   
+//          case 값2: 실행... break;
+//          ...
+//          ...
+//          default:  실행... break;
+//      }
+//      
+//   반복문
 
 
 
