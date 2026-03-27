@@ -73,8 +73,8 @@
 // 
 //   메모리구조
 //      코드영역   : code, 프로그램의 명령어가 저장되는 영역
-//      데이터영역 : data, global variable, 전역변수, 정적변수, 상수 등이 저자오디는 영역
-//      heap 영역  : dynamic allocation, 동적 메모리 할당이 이루러지는 영역
+//      데이터영역 : data, global variable, 전역변수, 정적변수, 상수 등이 저장디는 영역
+//      heap 영역  : dynamic allocation, 동적 메모리 할당이 이루어지는 영역
 //      stack 영역 : local variable, parameter, 함수의 매개변수, 지역변수, 반환주소 등이 저장되는 영역
 //                   (함수 호출시 생성, 함수 종료시 소멸)
 //  
