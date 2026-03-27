@@ -112,6 +112,8 @@
 
 #include <iostream>
 
+using namespace std;
+
 // Function 함수정의
 int Sum(int a, int b)
 {
@@ -138,7 +140,25 @@ int main()
     int a = 3;
     int b = 4;
     c = Sum(a, b);
-    std::cout << c;
+    std::cout << c <<endl;
+
+    char Fruits[3][10] = { "apple", "banana", "orange" };
+    cout << "1번째 항목 : " << Fruits[0] << "\n"; 
+    cout << "2번째 항목 : " << Fruits[1] << "\n";
+    cout << "3번째 항목 : " << Fruits[2] << "\n";
+
+    int arr[5];
+    int ArrSize;
+    int ArrLength1, ArrLength2;
+
+    ArrSize = sizeof(arr); // 배열 크기
+    ArrLength1 = sizeof(arr) / sizeof(int); // 배열 길이
+    ArrLength2 = sizeof(arr) / sizeof(*arr); //첫번째 원소의 값. 포인터를 알아야 함
+
+    cout << "배열 크기 : " << ArrSize << "\n";
+    cout << "배열 길이 : " << ArrLength1 << "\n";
+    cout << "배열 길이 : " << ArrLength2 << "\n";
+
 }
 
 // 프로그램 실행: <Ctrl+F5> 또는 [디버그] > [디버깅하지 않고 시작] 메뉴
