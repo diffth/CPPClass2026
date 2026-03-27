@@ -143,6 +143,7 @@ int main()
     std::cout << c <<endl;
 
     char Fruits[3][10] = { "apple", "banana", "orange" };
+    //using namespace std; (std:: 생략가능)
     cout << "1번째 항목 : " << Fruits[0] << endl; 
     cout << "2번째 항목 : " << Fruits[1] << endl;
     cout << "3번째 항목 : " << Fruits[2] << endl;
