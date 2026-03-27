@@ -143,9 +143,9 @@ int main()
     std::cout << c <<endl;
 
     char Fruits[3][10] = { "apple", "banana", "orange" };
-    cout << "1번째 항목 : " << Fruits[0] << "\n"; 
-    cout << "2번째 항목 : " << Fruits[1] << "\n";
-    cout << "3번째 항목 : " << Fruits[2] << "\n";
+    cout << "1번째 항목 : " << Fruits[0] << endl; 
+    cout << "2번째 항목 : " << Fruits[1] << endl;
+    cout << "3번째 항목 : " << Fruits[2] << endl;
 
     int arr[5];
     int ArrSize;
