@@ -153,7 +153,7 @@ int main()
 
     ArrSize = sizeof(arr); // 배열 크기
     ArrLength1 = sizeof(arr) / sizeof(int); // 배열 길이
-    ArrLength2 = sizeof(arr) / sizeof(*arr); //첫번째 원소의 값. 포인터를 알아야 함
+    ArrLength2 = sizeof(arr) / sizeof(*arr); //첫번째 원소의 값. 포인터(*) arr[0]과 동일
 
     cout << "배열 크기 : " << ArrSize << "\n";
     cout << "배열 길이 : " << ArrLength1 << "\n";
