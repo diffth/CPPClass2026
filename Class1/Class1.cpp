@@ -23,7 +23,7 @@
 //      구조체(struct) : 여러 변수들의 묶음. struct Info { int age, float height };
 //      typedef        : 새로운 자료형 이름 정의, 별칭
 // 
-//   ④ 배열(array) []
+//   ④ 배열 array []
 //      같은 타입의 변수들의 집합. 연속된 메모리 공간에 저장.
 //      int arr[5], char str[10]
 //      int arr[5] = {1, 2, 3, 4, 5};   // int 배열 초기화
