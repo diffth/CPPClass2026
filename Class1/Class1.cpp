@@ -48,9 +48,19 @@
 //      str1.replace(0, 5, "Hi");//문자열의 특정 위치에 있는 부분을 다른 문자열로 대체
 //      기타 문자열 관련 함수들...
 // 
-//   ⑥
+//   ⑥ 포인터 pointer *
+//      변수의 주소를 저장하는 변수. 메모리 주소를 직접 다루는 변수
+//      & 주소 연산자, 번지연산자
+//      * 참조 연산자
+//      int Num = 5;            //int 변수 선언, 초기화
+//      int* ptr = &Num;        //포인터 변수 선언, 초기화
+//      cout << *ptr << endl;   //포인터가 가리키는 값 출력 *ptr
+//      NULL, nullptr : 포인터 변수 초기화     
+//      int* ptr1 = NULL;
+//      int* ptr2 = nullptr;
+//      이중포인터, 다중포인터 등...
+//      배열 포인터 * / 포인터 배열 []
 // 
-//      
 // 
 //---------------------------------------------------------------------------
 //2.연산자 operator
@@ -161,6 +171,7 @@ int main()
     //Length = 9999;
     //std::cout << Length << std::endl;
 
+    /*
     int c;
     int a = 3;
     int b = 4;
@@ -184,6 +195,35 @@ int main()
     cout << "배열 크기 : " << ArrSize << "\n";
     cout << "배열 길이 : " << ArrLength1 << "\n";
     cout << "배열 길이 : " << ArrLength2 << "\n";
+    */
+
+    /*
+    int Num = 5;
+    int* ptr = &Num;
+
+    cout << "Num 값 : " << Num << endl;
+    cout << "ptr 주소   : " << ptr << endl;
+    cout << "prt 주소에 들어있는 값 : " << *ptr << endl << endl;
+
+    int* ptr1 = NULL;   //포인터 초기화
+    int* ptr2 = nullptr;//c++11 이후 nullptr 사용
+    cout << "ptr1 주소 : " << ptr1 << endl;
+    cout << "ptr2 주소 : " << ptr2 << endl;
+    */
+
+    int val1 = 5;
+    float val2 = 10.5;
+
+    int* ptr1 = &val1;
+    float* ptr2 = &val2;
+
+    cout << ptr1 << endl;
+    cout << ptr1 + 1 << endl;
+    cout << *ptr1 << endl;
+    cout << ptr2 << endl;
+    cout << ptr2 + 1 << endl;
+    cout << *ptr2 << endl;
+
 
 }
 
