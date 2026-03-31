@@ -48,18 +48,43 @@
 //      str1.replace(0, 5, "Hi");//문자열의 특정 위치에 있는 부분을 다른 문자열로 대체
 //      기타 문자열 관련 함수들...
 // 
-//   ⑥ 포인터 pointer *
+//   ⑥ 포인터 pointer * 와 배열 []
 //      변수의 주소를 저장하는 변수. 메모리 주소를 직접 다루는 변수
 //      & 주소 연산자, 번지연산자
 //      * 참조 연산자
-//      int Num = 5;            //int 변수 선언, 초기화
-//      int* ptr = &Num;        //포인터 변수 선언, 초기화
-//      cout << *ptr << endl;   //포인터가 가리키는 값 출력 *ptr
+//          int Num = 5;            //int 변수 선언, 초기화
+//          int* ptr = &Num;        //포인터 변수 선언, 초기화
+//          cout << *ptr << endl;   //포인터가 가리키는 값 출력 *ptr
 //      NULL, nullptr : 포인터 변수 초기화     
-//      int* ptr1 = NULL;
-//      int* ptr2 = nullptr;
+//          int* ptr1 = NULL;
+//          int* ptr2 = nullptr;
 //      이중포인터, 다중포인터 등...
+//      void* 포인터 : 어떤 타입의 데이터도 가리킬 수 있는 포인터.(주소값만 저장)
 //      배열 포인터 * / 포인터 배열 []
+// 
+//   ⑦ 동적 메모리 할당(dynamic memory allocation) : new(생성), delete(해제) / 메모리누수(memory leak) 방지
+//          int* ptr_dynamic = new int(5); //int타입 포인터 변수 동적 할당
+//          delete ptr_dynamic;            //동적 할당 해제
+//      배열의 동적할당
+//          int* arr = new int[10]();      //int타입 배열의 동적 할당. 10개의 배열에 0으로 초기화
+//          delete[] arr;                  //배열 동적할당 해제  
+//      스마트 포인터(smart pointer) : 동적 메모리 관리를 자동으로 해주는 클래스
+//          #include <memory>
+//          std::unique_ptr<int> p = std::make_unique<int>(5); //유니크 포인터 생성, 초기화
+//          unique_ptr, shared_ptr, weak_ptr 등의 스마트 포인터 제공
+//          
+//   ⑧ 참조자(reference &) : 변수의 별칭.
+//          포인터와 유사하지만, 안전성이 높다.
+//          선언과 동시에 초기화. 다른 변수 참조 불가능.
+//          & 주소연산자와 다른 의미의 참조 연산자로 사용
+//          int A;
+//          int& A_Ref = A;
+//      배열의 참조자
+//          int A[3];
+//          int (&A_Ref)[3] = A;        //배열 A의 참조자 A_Ref 선언, 초기화
+//          cout << A_Ref[2] << endl;   //배열 A의 3번째 배열값에 접근
+// 
+// 
 // 
 // 
 //---------------------------------------------------------------------------
@@ -211,6 +236,7 @@ int main()
     cout << "ptr2 주소 : " << ptr2 << endl;
     */
 
+    /*
     int val1 = 5;
     float val2 = 10.5;
 
@@ -223,7 +249,12 @@ int main()
     cout << ptr2 << endl;
     cout << ptr2 + 1 << endl;
     cout << *ptr2 << endl;
+    */
 
+    int A[3] = { 1,2,3 };
+    int (&A_Ref)[3] = A;
+
+    cout << A_Ref[2] << endl;
 
 }
 
