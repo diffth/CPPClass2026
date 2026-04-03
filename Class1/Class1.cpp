@@ -64,7 +64,7 @@
 // 
 //   ⑦ 동적 메모리 할당(dynamic memory allocation) : new(생성), delete(해제) / 메모리누수(memory leak) 방지
 //          int* ptr_dynamic = new int(5); //int타입 포인터 변수 동적 할당
-//          delete ptr_dynamic;            //동적 할당 해제
+//          delete ptr_dynamic;            //동적 할당 해제 
 //      배열의 동적할당
 //          int* arr = new int[10]();      //int타입 배열의 동적 할당. 10개의 배열에 0으로 초기화
 //          delete[] arr;                  //배열 동적할당 해제  
