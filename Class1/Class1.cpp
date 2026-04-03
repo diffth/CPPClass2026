@@ -166,7 +166,7 @@
 //   디폴트인수(default argument) : 함수 선언에서 매개변수에 기본값을 지정하는 기능
 //      함수 호출시 인수가 없으면, 기본값인 default argument 사용
 // 
-//   함수 오버로링(fucntion overloading) : 함수중복정의
+//   함수 오버로링(fucntion overloading) : 함수 중복정의
 //      값은 이름의 함수 중복사용 허용.
 //      함수 이름은 같지만, 매개변수의 타입이나 개수가 다른 함수를 여러 개 정의할 수 있는 기능
 //   함수 오버라이딩(overriding) : 함수 재정의
