@@ -2,10 +2,17 @@
 //
 
 #include <iostream>
+#include "Car.h"
+
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	Car MyCar;		//Car 클래스타입 MyCar 객체 생성
+	MyCar.Break();	//MyCar 객체의 Break() 함수호출
+	MyCar.Run();
+	MyCar.GasFull(5);	//call by value로 5를 전달
+
 }
 
 // 프로그램 실행: <Ctrl+F5> 또는 [디버그] > [디버깅하지 않고 시작] 메뉴
