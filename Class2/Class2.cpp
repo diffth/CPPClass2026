@@ -12,7 +12,8 @@ int main()
 	MyCar.Break();	//MyCar 객체의 Break() 함수호출
 	MyCar.Run();
 	MyCar.GasFull(5);	//call by value로 5를 전달
-
+	MyCar = Car(200,5);
+	
 }
 
 // 프로그램 실행: <Ctrl+F5> 또는 [디버그] > [디버깅하지 않고 시작] 메뉴

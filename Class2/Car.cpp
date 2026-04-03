@@ -6,6 +6,11 @@ Car::Car()
 	cout << " Car class default 생성자 호출" << endl;
 }
 
+Car::Car(float Gas, int Max)
+{
+	cout << " Car class 매개변수 2인 생성자 호출: " << Gas << " : " << Max << endl;
+}
+
 //소멸자
 Car::~Car()
 {

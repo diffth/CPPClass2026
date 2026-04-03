@@ -15,6 +15,7 @@ public:
 
 public:
 	Car();	//생성자 선언
+	Car(float Gas, int Max);
 	~Car();	//소멸자 선언
 
 	//멤버함수 선언
