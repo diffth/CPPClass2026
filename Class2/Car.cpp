@@ -29,7 +29,7 @@ int Car::GetMax()
 	return 0;
 }
 
-void Car::GasFull(int)
+void Car::GasFull(int gas)
 {
-	cout << " Car class GasFull() 함수 호출" << endl;
+	cout << " Car class GasFull() 함수 호출: " << gas << endl;
 }
