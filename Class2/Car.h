@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include <iostream>
 
 using namespace std;
 
@@ -14,12 +15,12 @@ public:
 
 public:
 	Car();	//생성자 선언
-	~Car();	//소렬자 선언
+	~Car();	//소멸자 선언
 
 	//멤버함수 선언
 	void Break();
 	void Run();
-	int GetMaqx();
+	int GetMax();
 	void GasFull(int);
 };
 
