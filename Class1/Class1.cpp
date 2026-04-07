@@ -189,7 +189,7 @@
 //   
 //   구성
 //      멤버변수(member variable) : 객체의 속성이나 상태를 나타내는 변수. 필드, 속성
-//      멤버함수(member funtion)  : 객체의 행동이나 기능을 나타내는 함수. 메소드(method)
+//      멤버함수(member function) : 객체의 행동이나 기능을 나타내는 함수. 메소드(method)
 // 
 //   생성자(constructor), 소멸자(destructor)
 //      Car();  생성자 : 객체가 생성될 때 자동으로 호출. 객체 초기화에 사용. 오버로딩 가능
