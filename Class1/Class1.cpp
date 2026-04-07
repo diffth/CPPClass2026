@@ -224,6 +224,40 @@
 //          오버로딩(overloading)  : 함수 중복정의. 함수 이름은 같지만, 매개변수의 타입이나 개수가 다른 형태. 
 //          오버라이딩(overriding) : 함수 재정의. 부모클래스에서 정의된 함수를 자식클래스에서 재정의하여 사용하는 형태. virtual 함수 사용
 // 
+//   다형성(polymorphism)
+//      함수의 기능적 다형성과 상속에 의해 만들어진 계층 관계를 활용한 다형성
+//      형변환(casting) : 객체의 타입을 다른 타입으로 변환하는 과정.
+//          업캐스팅(up casting)     : 자식 클래스의 객체를 부모 클래스 타입으로 변환하는 과정.
+//              Car car; Suv MySuv;
+//              Car* ptr_car = &MySuv; //자식 클래스의 객체를 부모 클래스 타입의 포인터로 변환
+//          다운캐스팅(down casting) : 부모 클래스의 객체를 자식 클래스 타입으로 변환하는 과정.
+//              Car MyCar;
+//              Suv* prt_suv = &MyCar; //부모 클래시의 객체를 자식 클래스 타입의 포인터로 변환.
+//          명시적 형변환 : 안전한 형편환을 위해, c++에서 미리 정해놓은 형변환 연산자. 
+//              static_cast, dynamic_cast, const_cast, reinterpret_cast 등 제공.
+// 
+//      가상함수(virtual function) : 부모 클래스에서 가상함수로 선언된 함수를 자식 클래스에서 재정의하여 사용하는 형태.
+//          virtual 멤버함수
+//              class Car {
+//                  ...
+//                  virtual void Break() { cout << "Car의 브레이크" << endl; }   
+//              }
+//              class Suv : public Car {
+//                  ...
+//                  virtual void Break() { cout << "Suv의 브레이크" << endl; }
+//              }
+//          
+//          __super 함수 : 부모 클래스의 가상함수를 호출하는 함수.
+//              class Car {
+//                  ...
+//                  virtual void Break() { cout << "Car의 브레이크" << endl; }   
+//              }
+//              class Suv : public Car {
+//                  ...
+//                  __super::Break(); //부모 클래스의 Break() 함수 호출
+//                  virtual void Break() { cout << "Suv의 브레이크" << endl; }
+//              }
+//                  
 // 
 //---------------------------------------------------------------------------
 //기타등등
